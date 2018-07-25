@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-standard"
+  ],
+  "rules": {
+    "no-bitwise": false,
+    "no-unused-variable": false,
+    "interface-name": false,
+    "max-line-length": false,
+    "member-access": [true, "no-public"],
+    "no-console": [true, "log"],
+    "object-literal-sort-keys": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "polish-vehicle-registration-certificate-decoder",
+  "version": "0.1.0",
+  "description": "Decode Polish Vehicle Registration Certificate Aztec 2D barcode data",
+  "main": "lib/polish-vehicle-registration-certificate-decoder.js",
+  "typings": "lib/polish-vehicle-registration-certificate-decoder.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder"
+  },
+  "keywords": [
+    "2d",
+    "aztec",
+    "aztec2d",
+    "barcode",
+    "decode",
+    "decoder",
+    "vehicle"
+  ],
+  "author": "Piotr Roszatycki",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder/issues"
+  },
+  "homepage": "http://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "nrv2e-decompress": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.3",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^5.2.0",
+    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "markdownlint-cli": "^0.11.0",
+    "standard": "^11.0.1",
+    "tap": "^12.0.1",
+    "tap-given": "^0.6.0",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^7.1.0",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "pretest": "eslint . && tsc --noEmit --pretty && tslint -t stylish -p . && echo markdownlint *.md",
+    "test": "npm run test:api",
+    "test:api": "tap test/*.js",
+    "test:coverage": "npm run test:api -- --coverage"
+  },
+  "standard": {
+    "globals": [
+      "And",
+      "After",
+      "Before",
+      "Feature",
+      "Given",
+      "Scenario",
+      "Then",
+      "When"
+    ]
+  },
+  "nyc": {
+    "exclude": []
+  }
+}

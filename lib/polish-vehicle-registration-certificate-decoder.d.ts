@@ -1,0 +1,102 @@
+/// <reference types="node" />
+
+export type PolishVehicleRegistrationCertificateFuelCode = 'P' | 'D' | 'M' | 'LPG' | 'CNG' | 'H' | 'LNG' | 'BD' | 'E85' | 'EE' | '999'
+
+export interface PolishVehicleRegistrationCertificateFuel {
+  name: string
+  description: string
+  value: PolishVehicleRegistrationCertificateFuelCode
+}
+
+export interface PolishVehicleRegistrationCertificateIssuerValue extends Array<string> {
+  0: string
+  1: string
+  2: string
+  3: string
+}
+
+export interface PolishVehicleRegistrationCertificateIssuer {
+  name: string
+  description: string
+  value: PolishVehicleRegistrationCertificateIssuerValue
+}
+
+export interface PolishVehicleRegistrationCertificateField {
+  name: string
+  description: string
+  value: string
+}
+
+export interface PolishVehicleRegistrationCertificateData {
+  format: PolishVehicleRegistrationCertificateField
+  seriaDr: PolishVehicleRegistrationCertificateField
+  kodTerytorialnyUrzedu: PolishVehicleRegistrationCertificateField
+  organWydajacy: PolishVehicleRegistrationCertificateIssuer
+  numerRejestracyjnyPojazdu: PolishVehicleRegistrationCertificateField
+  markaPojazdu: PolishVehicleRegistrationCertificateField
+  typPojazdu: PolishVehicleRegistrationCertificateField
+  wariantPojazdu: PolishVehicleRegistrationCertificateField
+  wersjaPojazdu: PolishVehicleRegistrationCertificateField
+  modelPojazdu: PolishVehicleRegistrationCertificateField
+  numerIdentyfikacyjnyPojazdu: PolishVehicleRegistrationCertificateField
+  dataWydaniaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  okresWaznosciDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  pelneNazwiskoLubNazwaPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  imiePosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  nazwiskoPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  nazwaPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  numerPESELLubREGONPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  kodPocztowyPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  miejscowoscPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  gminaPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  ulicaPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  nrDomuPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  nrMieszkaniaPosiadaczaDowoduRejestracyjnego: PolishVehicleRegistrationCertificateField
+  pelneNazwiskoLubNazwaWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  imieWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  nazwiskoWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  nazwaWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  numerPESELLubREGONWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  kodPocztowyWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  miejscowoscWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  gminaWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  ulicaWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  nrDomuWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  nrMieszkaniaWlascicielaPojazdu: PolishVehicleRegistrationCertificateField
+  maksymalnaMasaCalkowitaPojazduKg: PolishVehicleRegistrationCertificateField
+  dopuszczalnaMasaCalkowitaPojazduKg: PolishVehicleRegistrationCertificateField
+  dopuszczalnaMasaCalkowitaZespoluPojazdowKg: PolishVehicleRegistrationCertificateField
+  masaWlasnaPojazduKg: PolishVehicleRegistrationCertificateField
+  kategoriaPojazdu: PolishVehicleRegistrationCertificateField
+  numerSwiadectwaHomologacjiTypuPojazdu: PolishVehicleRegistrationCertificateField
+  liczbaOsi: PolishVehicleRegistrationCertificateField
+  maksymalnaMasaCalkowitaPrzyczepyZHamulcemKg: PolishVehicleRegistrationCertificateField
+  maksymalnaMasaCalkowitaPrzyczepyBezHamulcaKg: PolishVehicleRegistrationCertificateField
+  stosunekMocyDoMasyWlasnejKWkg: PolishVehicleRegistrationCertificateField
+  pojemnoscSilnikaCm3: PolishVehicleRegistrationCertificateField
+  maksymalnaMocNettoSilnikaKW: PolishVehicleRegistrationCertificateField
+  rodzajPaliwa: PolishVehicleRegistrationCertificateFuel
+  dataPierwszejRejestracjiPojazdu: PolishVehicleRegistrationCertificateField
+  liczbaMiejscSiedzacych: PolishVehicleRegistrationCertificateField
+  liczbaMiejscStojacych: PolishVehicleRegistrationCertificateField
+  rodzajPojazdu: PolishVehicleRegistrationCertificateField
+  przeznaczenie: PolishVehicleRegistrationCertificateField
+  rokProdukcji: PolishVehicleRegistrationCertificateField
+  dopuszczalnaLadownosc: PolishVehicleRegistrationCertificateField
+  najwiekszyDopNaciskOsi: PolishVehicleRegistrationCertificateField
+  nrKartyPojazdu: PolishVehicleRegistrationCertificateField
+  kodIdentyfikacyjny: PolishVehicleRegistrationCertificateField
+  rodzajKod: PolishVehicleRegistrationCertificateField
+  podrodzajKod: PolishVehicleRegistrationCertificateField
+  przeznaczenieKod: PolishVehicleRegistrationCertificateField
+  nieznane1: PolishVehicleRegistrationCertificateField
+  nieznane2: PolishVehicleRegistrationCertificateField
+}
+
+export class PolishVehicleRegistrationCertificateDecoder {
+  readonly data: PolishVehicleRegistrationCertificateData
+
+  constructor (b64Input: string)
+}
+
+export default PolishVehicleRegistrationCertificateDecoder

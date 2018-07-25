@@ -1,0 +1,24 @@
+sudo: false
+
+language: node_js
+
+env:
+  global:
+    - TAP_RCFILE=./.taprc
+
+matrix:
+  include:
+    - node_js: "10"
+      env: NPM_RUN_SCRIPT=test
+    - node_js: "9"
+    - node_js: "8"
+    - node_js: "7"
+    - node_js: "6"
+    - node_js: "5"
+    - node_js: "4"
+
+install:
+  - npm install
+
+script:
+  - npm run ${NPM_RUN_SCRIPT:-test:api}
