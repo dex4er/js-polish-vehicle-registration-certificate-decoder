@@ -9,16 +9,19 @@ env:
 matrix:
   include:
     - node_js: "10"
-      env: NPM_RUN_SCRIPT=test
+      env: NPM_RUN_SCRIPT=test NPM_AUDIT=true TAP_ARGS="-- --node-arg=--pending-deprecation --node-arg=--throw-deprecation"
     - node_js: "9"
     - node_js: "8"
     - node_js: "7"
     - node_js: "6"
     - node_js: "5"
+      env: TAP_ARGS=--strict
     - node_js: "4"
+      env: TAP_ARGS=--strict
 
 install:
   - npm install
+  - if [ "$NPM_AUDIT" = true ]; then npm audit; fi
 
 script:
-  - npm run ${NPM_RUN_SCRIPT:-test:api}
+  - npm run ${NPM_RUN_SCRIPT:-test:api} -- ${TAP_ARGS}
