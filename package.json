@@ -48,7 +48,7 @@
     "typescript": "^2.9.2"
   },
   "scripts": {
-    "pretest": "eslint . && tsc --noEmit --pretty && tslint -t stylish -p . && echo markdownlint *.md",
+    "pretest": "eslint . && tsc --noEmit --pretty && tslint -t stylish -p . && markdownlint *.md",
     "test": "npm run test:api",
     "test:api": "tap test/*.js",
     "test:coverage": "npm run test:api -- --coverage"
