@@ -66,10 +66,10 @@ _Arguments:_
 
 ## data
 
-Property which contains decoded data object. Each property of this data object
-is an object with `name`, `description` and `value` properties. This object is
-an instance of `PolishVehicleRegistrationCertificateNewFormatData` or
-`PolishVehicleRegistrationCertificateOldFormatData` class.
+Property which contains decoded data object. This object is an instance of
+`PolishVehicleRegistrationCertificateNewFormatData` or
+`PolishVehicleRegistrationCertificateOldFormatData` class. Each property of this
+data object is an object with `name`, `description` and `value` properties.
 
 _Example:_
 
