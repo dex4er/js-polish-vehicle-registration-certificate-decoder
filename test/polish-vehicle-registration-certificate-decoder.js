@@ -316,7 +316,7 @@ Feature('Test nrv2eDecompress', () => {
           value: 'AAA0000000'
         },
         kodIdentyfikacyjny: {
-          name: '?',
+          name: 'OCR',
           description: 'kod identyfikacyjny',
           value: '02650008000158'
         },

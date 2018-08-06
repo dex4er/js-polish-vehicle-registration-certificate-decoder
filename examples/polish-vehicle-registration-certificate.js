@@ -7,6 +7,9 @@ const b64Input = 'BgQAANtYAAJDAPkxAHwAQXIw7zcGNN4ANiox+w81HrUGOP8eUABSAEUA+1oAWQ
 
 const decoder = new PolishVehicleRegistrationCertificateDecoder(b64Input)
 
+console.info(decoder.data.constructor.name.replace(/(?!^)[A-Z]/g, (m) => ' ' + m.toLowerCase()) + ':')
+console.info('')
+
 Object.values(decoder.data).forEach((field) => {
   console.info(`${field.name.padStart(30)}: ${field.value}`)
 })

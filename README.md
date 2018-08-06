@@ -28,10 +28,30 @@ npm install -D @types/node
 const PolishVehicleRegistrationCertificateDecoder = require('polish-vehicle-registration-certificate-decoder')
 ```
 
+or:
+
+```js
+const {
+  PolishVehicleRegistrationCertificateDecoder,
+  PolishVehicleRegistrationCertificateNewFormatData,
+  PolishVehicleRegistrationCertificateOldFormatData
+} = require('polish-vehicle-registration-certificate-decoder')
+```
+
 _Typescript:_
 
 ```ts
 import PolishVehicleRegistrationCertificateDecoder from 'polish-vehicle-registration-certificate-decoder'
+```
+
+or
+
+```ts
+import {
+  PolishVehicleRegistrationCertificateDecoder,
+  PolishVehicleRegistrationCertificateNewFormatData,
+  PolishVehicleRegistrationCertificateOldFormatData
+} from 'polish-vehicle-registration-certificate-decoder'
 ```
 
 ### constructor
@@ -47,17 +67,33 @@ _Arguments:_
 ## data
 
 Property which contains decoded data object. Each property of this data object
-is an object with `name`, `description` and `value` properties.
+is an object with `name`, `description` and `value` properties. This object is
+an instance of `PolishVehicleRegistrationCertificateNewFormatData` or
+`PolishVehicleRegistrationCertificateOldFormatData` class.
 
 _Example:_
 
 <!-- markdownlint-disable MD013 -->
 
 ```js
+if (decoder.data instanceof PolishVehicleRegistrationCertificateNewFormatData) {
+  console.log(decoder.data.format)
+} else if (decoder.data instanceof PolishVehicleRegistrationCertificateOldFormatData) {
+  console.log(decoder.data.adresPosiadaczaDowoduRejestracyjnego)
+}
+```
+
+<!-- markdownlint-enable MD013 -->
+
+Full example of new format data:
+
+```js
 console.log(JSON.strinfigy(decoder.data, null, 2))
 ```
 
 Output:
+
+<!-- markdownlint-disable MD013 -->
 
 ```json
 {
@@ -352,7 +388,7 @@ Output:
     "value": "AAA0000000"
   },
   "kodIdentyfikacyjny": {
-    "name": "?",
+    "name": "OCR",
     "description": "kod identyfikacyjny",
     "value": "02650008000158"
   },
