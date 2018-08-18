@@ -6,30 +6,19 @@ export interface PolishVehicleRegistrationCertificateFuel {
   name: string
   description: string
   value: PolishVehicleRegistrationCertificateFuelCode
-}
-
-export interface PolishVehicleRegistrationCertificateIssuerValue extends Array<string> {
-  0: string
-  1: string
-  2: string
-  3: string
+  valueDescription: string
 }
 
 export interface PolishVehicleRegistrationCertificateIssuer {
   name: string
   description: string
-  value: PolishVehicleRegistrationCertificateIssuerValue
-}
-
-export interface PolishVehicleRegistrationCertificateAddressValue extends Array<string> {
-  0: string
-  1: string
+  value: string[4]
 }
 
 export interface PolishVehicleRegistrationCertificateAddress {
   name: string
   description: string
-  value: PolishVehicleRegistrationCertificateAddressValue
+  value: string[2]
 }
 
 export interface PolishVehicleRegistrationCertificateField {

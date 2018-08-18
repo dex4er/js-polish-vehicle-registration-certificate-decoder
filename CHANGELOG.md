@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.0 2018-08-18
+
+* Decoding of fuel code to `valueDescription` property.
+
 ## v0.2.0 2018-08-06
 
 * Support for old data format.

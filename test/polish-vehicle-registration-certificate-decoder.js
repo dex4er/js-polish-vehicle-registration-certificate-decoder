@@ -268,7 +268,8 @@ Feature('Test nrv2eDecompress', () => {
         rodzajPaliwa: {
           name: 'P.3',
           description: 'rodzaj paliwa',
-          value: 'P '
+          value: 'P',
+          valueDescription: 'benzyna'
         },
         dataPierwszejRejestracjiPojazdu: {
           name: 'B',

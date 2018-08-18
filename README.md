@@ -70,6 +70,7 @@ Property which contains decoded data object. This object is an instance of
 `PolishVehicleRegistrationCertificateNewFormatData` or
 `PolishVehicleRegistrationCertificateOldFormatData` class. Each property of this
 data object is an object with `name`, `description` and `value` properties.
+Object for `rodzajPaliwa` has additional `valueDescription` property.
 
 _Example:_
 
@@ -340,7 +341,8 @@ Output:
   "rodzajPaliwa": {
     "name": "P.3",
     "description": "rodzaj paliwa",
-    "value": "P "
+    "value": "P",
+    "valueDescription": "benzyna"
   },
   "dataPierwszejRejestracjiPojazdu": {
     "name": "B",
