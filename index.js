@@ -1,1 +1,1 @@
-module.exports = require('./lib/polish-vehicle-registration-certificate-decoder.js')
+module.exports = require('./lib/polish-vehicle-registration-certificate-decoder')

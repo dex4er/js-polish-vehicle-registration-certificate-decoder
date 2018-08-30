@@ -5,6 +5,9 @@
 
 ts-node-*
 
+/lib/
+/test/mocha.opts
+
 /coverage/
 /node_modules/
 /out/

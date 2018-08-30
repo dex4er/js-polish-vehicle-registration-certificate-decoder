@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.4.0 2018-08-29
+
+* Rewritten in Typescript
+
 ## v0.3.0 2018-08-18
 
 * Decoding of fuel code to `valueDescription` property.

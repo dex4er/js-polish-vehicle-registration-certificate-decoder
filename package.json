@@ -1,6 +1,6 @@
 {
   "name": "polish-vehicle-registration-certificate-decoder",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Decode Polish Vehicle Registration Certificate Aztec 2D barcode data",
   "main": "lib/polish-vehicle-registration-certificate-decoder.js",
   "typings": "lib/polish-vehicle-registration-certificate-decoder.d.ts",
@@ -27,45 +27,47 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "nrv2e-decompress": "^0.1.0"
+    "nrv2e-decompress": "^0.2.0",
+    "tslib": "^1.9.3"
   },
   "devDependencies": {
-    "@types/node": "^10.7.1",
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.9.3",
     "chai": "^4.1.2",
-    "chai-as-promised": "^7.1.1",
     "eslint": "^5.4.0",
-    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
     "markdownlint-cli": "^0.13.0",
-    "standard": "^11.0.1",
-    "tap": "^12.0.1",
-    "tap-given": "^0.6.0",
+    "mocha": "^5.2.0",
+    "source-map-support": "^0.5.9",
+    "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "tslint-config-standard": "^7.1.0",
+    "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.0.1"
   },
   "scripts": {
-    "pretest": "eslint . && tsc --noEmit --pretty && tslint -t stylish -p . && markdownlint *.md",
+    "build": "tsc --pretty",
+    "clean": "rimraf lib",
+    "postpublish": "git tag v$npm_package_version -a -m \"Release $npm_package_version\" && git push --tags",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run build && eslint . && tslint -t stylish -p . && markdownlint \"*.md\"",
     "test": "npm run test:api",
-    "test:api": "tap test/*.js",
-    "test:coverage": "npm run test:api -- --coverage"
-  },
-  "standard": {
-    "globals": [
-      "And",
-      "After",
-      "Before",
-      "Feature",
-      "Given",
-      "Scenario",
-      "Then",
-      "When"
-    ]
+    "test:api": "npm run ts-mocha -- \"test/*.ts\"",
+    "test:coverage": "nyc --reporter json npm run test:api && nyc report",
+    "ts-mocha": "mocha --use_strict --throw-deprecation --require source-map-support/register --require ts-node/register --timeout 90000"
   },
   "nyc": {
-    "exclude": []
+    "extension": [
+      ".ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ]
   }
 }

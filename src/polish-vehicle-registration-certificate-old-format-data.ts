@@ -1,0 +1,44 @@
+import {
+  PolishVehicleRegistrationCertificateAddress,
+  PolishVehicleRegistrationCertificateFuel,
+  PolishVehicleRegistrationCertificateIssuer,
+  PolishVehicleRegistrationCertificateValue
+} from './polish-vehicle-registration-certificate-fields'
+
+export class PolishVehicleRegistrationCertificateOldFormatData {
+  seriaDr!: PolishVehicleRegistrationCertificateValue
+  organWydajacy!: PolishVehicleRegistrationCertificateIssuer
+  numerRejestracyjnyPojazdu!: PolishVehicleRegistrationCertificateValue
+  markaPojazdu!: PolishVehicleRegistrationCertificateValue
+  modelPojazdu!: PolishVehicleRegistrationCertificateValue
+  numerIdentyfikacyjnyPojazdu!: PolishVehicleRegistrationCertificateValue
+  dataWydaniaDowoduRejestracyjnego!: PolishVehicleRegistrationCertificateValue
+  okresWaznosciDowoduRejestracyjnego!: PolishVehicleRegistrationCertificateValue
+  pelneNazwiskoLubNazwaPosiadaczaDowoduRejestracyjnego!: PolishVehicleRegistrationCertificateValue
+  adresPosiadaczaDowoduRejestracyjnego!: PolishVehicleRegistrationCertificateAddress
+  numerPESELLubREGONPosiadaczaDowoduRejestracyjnego!: PolishVehicleRegistrationCertificateValue
+  pelneNazwiskoLubNazwaWlascicielaPojazdu!: PolishVehicleRegistrationCertificateValue
+  numerPESELLubREGONWlascicielaPojazdu!: PolishVehicleRegistrationCertificateValue
+  adresWlascicielaPojazdu!: PolishVehicleRegistrationCertificateAddress
+  maksymalnaMasaCalkowitaPojazduKg!: PolishVehicleRegistrationCertificateValue
+  dopuszczalnaMasaCalkowitaPojazduKg!: PolishVehicleRegistrationCertificateValue
+  dopuszczalnaMasaCalkowitaZespoluPojazdowKg!: PolishVehicleRegistrationCertificateValue
+  masaWlasnaPojazduKg!: PolishVehicleRegistrationCertificateValue
+  liczbaOsi!: PolishVehicleRegistrationCertificateValue
+  maksymalnaMasaCalkowitaPrzyczepyZHamulcemKg!: PolishVehicleRegistrationCertificateValue
+  maksymalnaMasaCalkowitaPrzyczepyBezHamulcaKg!: PolishVehicleRegistrationCertificateValue
+  stosunekMocyDoMasyWlasnejKWkg!: PolishVehicleRegistrationCertificateValue
+  pojemnoscSilnikaCm3!: PolishVehicleRegistrationCertificateValue
+  maksymalnaMocNettoSilnikaKW!: PolishVehicleRegistrationCertificateValue
+  rodzajPaliwa!: PolishVehicleRegistrationCertificateFuel
+  dataPierwszejRejestracjiPojazdu!: PolishVehicleRegistrationCertificateValue
+  liczbaMiejscSiedzacych!: PolishVehicleRegistrationCertificateValue
+  liczbaMiejscStojacych!: PolishVehicleRegistrationCertificateValue
+  rodzajPojazdu!: PolishVehicleRegistrationCertificateValue
+  przeznaczenie!: PolishVehicleRegistrationCertificateValue
+  rokProdukcji!: PolishVehicleRegistrationCertificateValue
+  dopuszczalnaLadownosc!: PolishVehicleRegistrationCertificateValue
+  najwiekszyDopNaciskOsi!: PolishVehicleRegistrationCertificateValue
+  nrKartyPojazdu!: PolishVehicleRegistrationCertificateValue
+  kodIdentyfikacyjny!: PolishVehicleRegistrationCertificateValue
+}

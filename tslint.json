@@ -4,12 +4,19 @@
     "tslint-config-standard"
   ],
   "rules": {
-    "no-bitwise": false,
-    "no-unused-variable": false,
-    "interface-name": false,
-    "max-line-length": false,
-    "member-access": [true, "no-public"],
-    "no-console": [true, "log"],
-    "object-literal-sort-keys": false
+    "forin": false, // should be safe for containers
+    "interface-name": false, // don't like hungarian notation
+    "max-line-length": false, // looooong lines are not a problem with good text editor
+    "member-access": [true, "no-public"], // public is implicit
+    "no-console": [true, "log"], // `console.log` is for temporary debugging only
+    "no-misused-new": false, // allow to create container
+    "no-unused-variable": false, // no-unused-variable is deprecated. Since TypeScript 2.9.
+    "object-literal-sort-keys": false, // too problematic
+    "typedef": [ // types are mandatory
+      true,
+      "call-signature",
+      "parameter",
+      "property-declaration"
+    ]
   }
 }
