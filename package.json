@@ -57,9 +57,9 @@
     "postpublish": "git tag v$npm_package_version -a -m \"Release $npm_package_version\" && git push --tags",
     "prepublishOnly": "npm run build",
     "pretest": "npm run build && eslint . && tslint -t stylish -p . && markdownlint \"*.md\"",
-    "test": "npm run test:api",
-    "test:api": "npm run ts-mocha -- \"test/*.ts\"",
-    "test:coverage": "nyc --reporter json npm run test:api && nyc report",
+    "test": "npm run test:spec",
+    "test:spec": "npm run ts-mocha -- \"test/*.ts\"",
+    "test:coverage": "nyc --reporter json npm run test:spec && nyc report",
     "ts-mocha": "mocha --use_strict --throw-deprecation --require source-map-support/register --require ts-node/register --timeout 90000"
   },
   "nyc": {

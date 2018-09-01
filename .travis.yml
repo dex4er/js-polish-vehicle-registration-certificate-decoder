@@ -18,4 +18,4 @@ install:
 script:
   - echo "--reporter dot --color" > test/mocha.opts
   - npm run build
-  - npm run ${NPM_RUN_SCRIPT:-test:api} -- ${MOCHA_ARGS}
+  - npm run ${NPM_RUN_SCRIPT:-test:spec} -- ${MOCHA_ARGS}
