@@ -44,7 +44,7 @@ _Typescript:_
 import PolishVehicleRegistrationCertificateDecoder from 'polish-vehicle-registration-certificate-decoder'
 ```
 
-or
+_or:_
 
 ```ts
 import {
@@ -53,6 +53,16 @@ import {
   PolishVehicleRegistrationCertificateOldFormatData
 } from 'polish-vehicle-registration-certificate-decoder'
 ```
+
+_transpiling this module with own settings in `tsconfig.json`:_
+
+{
+  "compilerOptions": {
+    "paths": {
+      "polish-vehicle-registration-certificate-decoder": ["node_modules/polish-vehicle-registration-certificate-decoder/src/polish-vehicle-registration-certificate-decoder"]
+    }
+  }
+}
 
 ### constructor
 
