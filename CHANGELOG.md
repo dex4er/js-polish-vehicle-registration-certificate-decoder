@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.4.1 2018-09-07
+
+* Correct import syntax in documentation and examples.
+
 ## v0.4.0 2018-08-29
 
 * Rewritten in Typescript

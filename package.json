@@ -1,6 +1,6 @@
 {
   "name": "polish-vehicle-registration-certificate-decoder",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Decode Polish Vehicle Registration Certificate Aztec 2D barcode data",
   "main": "lib/polish-vehicle-registration-certificate-decoder.js",
   "typings": "lib/polish-vehicle-registration-certificate-decoder.d.ts",
@@ -27,7 +27,7 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "nrv2e-decompress": "^0.2.0",
+    "nrv2e-decompress": "^0.2.1",
     "tslib": "^1.9.3"
   },
   "devDependencies": {

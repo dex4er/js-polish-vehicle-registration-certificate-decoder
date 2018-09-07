@@ -25,7 +25,7 @@ npm install -D @types/node
 ## Usage
 
 ```js
-const PolishVehicleRegistrationCertificateDecoder = require('polish-vehicle-registration-certificate-decoder')
+const { PolishVehicleRegistrationCertificateDecoder } = require('polish-vehicle-registration-certificate-decoder')
 ```
 
 or:
