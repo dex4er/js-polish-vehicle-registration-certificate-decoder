@@ -39,7 +39,7 @@
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
     "markdownlint-cli": "^0.13.0",
@@ -47,7 +47,7 @@
     "source-map-support": "^0.5.9",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
-    "tslint-config-standard": "^8.0.0",
+    "tslint-config-standard": "^8.0.1",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.0.3"
   },
