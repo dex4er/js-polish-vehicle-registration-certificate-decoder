@@ -1,7 +1,7 @@
 import {
   PolishVehicleRegistrationCertificateFuel,
   PolishVehicleRegistrationCertificateIssuer,
-  PolishVehicleRegistrationCertificateValue
+  PolishVehicleRegistrationCertificateValue,
 } from './polish-vehicle-registration-certificate-fields'
 
 export class PolishVehicleRegistrationCertificateNewFormatData {

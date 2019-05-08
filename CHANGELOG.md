@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.5.0 2019-05-08
+
+* Ported fix dex4er/drpdecompress#2 for omitted word in C.1.2 field's description.
+* Compiled as ES5.
+
 ## v0.4.1 2018-09-07
 
 * Correct import syntax in documentation and examples.

@@ -202,7 +202,7 @@ Output:
   },
   "numerPESELLubREGONPosiadaczaDowoduRejestracyjnego": {
     "name": "C.1.2",
-    "description": "numer PESEL lub REGON dowodu rejestracyjnego",
+    "description": "numer PESEL lub REGON posiadacza dowodu rejestracyjnego",
     "value": "82091711022"
   },
   "kodPocztowyPosiadaczaDowoduRejestracyjnego": {
@@ -438,6 +438,6 @@ Output:
 
 ## License
 
-Copyright (c) 2018 Piotr Roszatycki <piotr.roszatycki@gmail.com>
+Copyright (c) 2018-2019 Piotr Roszatycki <piotr.roszatycki@gmail.com>
 
 [GPL-2.0](https://opensource.org/licenses/GPL-2.0)

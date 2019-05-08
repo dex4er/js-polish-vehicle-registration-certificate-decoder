@@ -1,6 +1,17 @@
 /// <reference types="node" />
 
-export type PolishVehicleRegistrationCertificateFuelCode = 'P' | 'D' | 'M' | 'LPG' | 'CNG' | 'H' | 'LNG' | 'BD' | 'E85' | 'EE' | '999'
+export type PolishVehicleRegistrationCertificateFuelCode =
+  | 'P'
+  | 'D'
+  | 'M'
+  | 'LPG'
+  | 'CNG'
+  | 'H'
+  | 'LNG'
+  | 'BD'
+  | 'E85'
+  | 'EE'
+  | '999'
 
 export interface PolishVehicleRegistrationCertificateFuel {
   name: string
@@ -27,4 +38,8 @@ export interface PolishVehicleRegistrationCertificateValue {
   value: string
 }
 
-export type PolishVehicleRegistrationCertificateField = PolishVehicleRegistrationCertificateFuel | PolishVehicleRegistrationCertificateIssuer | PolishVehicleRegistrationCertificateAddress | PolishVehicleRegistrationCertificateValue
+export type PolishVehicleRegistrationCertificateField =
+  | PolishVehicleRegistrationCertificateFuel
+  | PolishVehicleRegistrationCertificateIssuer
+  | PolishVehicleRegistrationCertificateAddress
+  | PolishVehicleRegistrationCertificateValue

@@ -1,0 +1,25 @@
+extends:
+  - tslint:recommended
+  - tslint-config-prettier
+rules:
+  await-promise: [true, Promise, PromiseLike] # chai-as-promised
+  curly: [true, ignore-same-line] # too strict
+  interface-name: false # don't like hungarian notation
+  max-line-length: false # prettier will handle it
+  member-access: [true, no-public] # public is implicit
+  no-console: [true, log] # `console.log` is for temporary debugging only
+  no-bitwise: false # decompression is bitwise operation
+  no-empty-interface: false # too strict
+  no-unused-variable: false # no-unused-variable is deprecated. Since TypeScript 2.9.
+  object-literal-sort-keys: false # too problematic
+  typedef: # types are mandatory
+    - true
+    - call-signature
+    - parameter
+    - property-declaration
+  variable-name: # allow leading underscore
+    - true
+    - check-format
+    - allow-leading-underscore
+    - require-const-for-all-caps
+    - ban-keywords
