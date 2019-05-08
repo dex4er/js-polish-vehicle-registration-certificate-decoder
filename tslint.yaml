@@ -8,7 +8,6 @@ rules:
   max-line-length: false # prettier will handle it
   member-access: [true, no-public] # public is implicit
   no-console: [true, log] # `console.log` is for temporary debugging only
-  no-bitwise: false # decompression is bitwise operation
   no-empty-interface: false # too strict
   no-unused-variable: false # no-unused-variable is deprecated. Since TypeScript 2.9.
   object-literal-sort-keys: false # too problematic
