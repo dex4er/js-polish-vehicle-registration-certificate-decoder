@@ -2,7 +2,7 @@ import {
   PolishVehicleRegistrationCertificateFuel,
   PolishVehicleRegistrationCertificateIssuer,
   PolishVehicleRegistrationCertificateValue,
-} from './polish-vehicle-registration-certificate-fields'
+} from './polish-vehicle-registration-certificate-fields.js'
 
 export class PolishVehicleRegistrationCertificateNewFormatData {
   /** identyfikator formatu */

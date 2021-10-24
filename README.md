@@ -1,14 +1,16 @@
 # polish-vehicle-registration-certificate-decoder
 
 <!-- markdownlint-disable MD013 -->
-[![Build Status](https://secure.travis-ci.org/dex4er/js-polish-vehicle-registration-certificate-decoder.svg)](http://travis-ci.org/dex4er/js-polish-vehicle-registration-certificate-decoder) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-polish-vehicle-registration-certificate-decoder/badge.svg)](https://coveralls.io/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![npm](https://img.shields.io/npm/v/polish-vehicle-registration-certificate-decoder.svg)](https://www.npmjs.com/package/polish-vehicle-registration-certificate-decoder)
+
+[![Build Status](https://api.travis-ci.com/dex4er/js-polish-vehicle-registration-certificate-decoder.svg)](https://api.travis-ci.com/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-polish-vehicle-registration-certificate-decoder/badge.svg)](https://coveralls.io/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![npm](https://img.shields.io/npm/v/polish-vehicle-registration-certificate-decoder.svg)](https://www.npmjs.com/package/polish-vehicle-registration-certificate-decoder)
+
 <!-- markdownlint-enable MD013 -->
 
 Decode Polish Vehicle Registration Certificate Aztec 2D barcode data.
 
 ## Requirements
 
-This module requires ES6 with Node >= 4.
+This is ESM module which requires ES2020 and Node >= 14.
 
 ## Installation
 
@@ -25,45 +27,17 @@ npm install -D @types/node
 ## Usage
 
 ```js
-const { PolishVehicleRegistrationCertificateDecoder } = require('polish-vehicle-registration-certificate-decoder')
-```
-
-or:
-
-```js
-const {
-  PolishVehicleRegistrationCertificateDecoder,
-  PolishVehicleRegistrationCertificateNewFormatData,
-  PolishVehicleRegistrationCertificateOldFormatData
-} = require('polish-vehicle-registration-certificate-decoder')
-```
-
-_Typescript:_
-
-```ts
 import PolishVehicleRegistrationCertificateDecoder from 'polish-vehicle-registration-certificate-decoder'
 ```
 
 or:
 
-```ts
+```js
 import {
   PolishVehicleRegistrationCertificateDecoder,
   PolishVehicleRegistrationCertificateNewFormatData,
-  PolishVehicleRegistrationCertificateOldFormatData
+  PolishVehicleRegistrationCertificateOldFormatData,
 } from 'polish-vehicle-registration-certificate-decoder'
-```
-
-Transpiling this module with own settings in `tsconfig.json`:
-
-```json
-{
-  "compilerOptions": {
-    "paths": {
-      "polish-vehicle-registration-certificate-decoder": ["node_modules/polish-vehicle-registration-certificate-decoder/src/polish-vehicle-registration-certificate-decoder"]
-    }
-  }
-}
 ```
 
 ### constructor
@@ -74,7 +48,7 @@ const decoder = new PolishVehicleRegistrationCertificateDecoder(b64Input)
 
 _Arguments:_
 
-* `b64Input` is a string with base64 data scanned from Aztec 2D barcode
+- `b64Input` is a string with base64 data scanned from Aztec 2D barcode
 
 ## data
 
@@ -128,12 +102,7 @@ Output:
   "organWydajacy": {
     "name": "ORGAN WYDAJĄCY",
     "description": "",
-    "value": [
-      "PREZYDENT M. ST. WARSZAWY",
-      "DZIELNICA MOKOTÓW",
-      "UL. RAKOWIECKA 25/27",
-      "02-517 WARSZAWA"
-    ]
+    "value": ["PREZYDENT M. ST. WARSZAWY", "DZIELNICA MOKOTÓW", "UL. RAKOWIECKA 25/27", "02-517 WARSZAWA"]
   },
   "numerRejestracyjnyPojazdu": {
     "name": "A",
@@ -438,6 +407,6 @@ Output:
 
 ## License
 
-Copyright (c) 2018-2019 Piotr Roszatycki <piotr.roszatycki@gmail.com>
+Copyright (c) 2018-2021 Piotr Roszatycki <piotr.roszatycki@gmail.com>
 
 [GPL-2.0](https://opensource.org/licenses/GPL-2.0)

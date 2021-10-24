@@ -1,7 +1,7 @@
 /// <reference types="node" />
 
-import {PolishVehicleRegistrationCertificateNewFormatData} from './polish-vehicle-registration-certificate-new-format-data'
-import {PolishVehicleRegistrationCertificateOldFormatData} from './polish-vehicle-registration-certificate-old-format-data'
+import {PolishVehicleRegistrationCertificateNewFormatData} from './polish-vehicle-registration-certificate-new-format-data.js'
+import {PolishVehicleRegistrationCertificateOldFormatData} from './polish-vehicle-registration-certificate-old-format-data.js'
 
 import nrv2eDecompress from 'nrv2e-decompress'
 
@@ -10,12 +10,8 @@ import {
   PolishVehicleRegistrationCertificateFuel,
   PolishVehicleRegistrationCertificateFuelCode,
 } from './polish-vehicle-registration-certificate-fields'
-export {
-  PolishVehicleRegistrationCertificateNewFormatData,
-} from './polish-vehicle-registration-certificate-new-format-data'
-export {
-  PolishVehicleRegistrationCertificateOldFormatData,
-} from './polish-vehicle-registration-certificate-old-format-data'
+export {PolishVehicleRegistrationCertificateNewFormatData} from './polish-vehicle-registration-certificate-new-format-data.js'
+export {PolishVehicleRegistrationCertificateOldFormatData} from './polish-vehicle-registration-certificate-old-format-data.js'
 
 export type PolishVehicleRegistrationCertificateData =
   | PolishVehicleRegistrationCertificateOldFormatData
