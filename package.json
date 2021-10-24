@@ -1,7 +1,14 @@
 {
   "name": "polish-vehicle-registration-certificate-decoder",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Decode Polish Vehicle Registration Certificate Aztec 2D barcode data",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./lib/polish-vehicle-registration-certificate-decoder.js",
+      "typings": "./lib/polish-vehicle-registration-certificate-decoder.d.ts"
+    }
+  },
   "main": "lib/polish-vehicle-registration-certificate-decoder.js",
   "typings": "lib/polish-vehicle-registration-certificate-decoder.d.ts",
   "repository": {
@@ -24,53 +31,51 @@
   },
   "homepage": "http://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=14.0.0"
   },
   "dependencies": {
-    "nrv2e-decompress": "^0.3.0",
-    "tslib": "^1.9.3"
+    "nrv2e-decompress": "^1.0.0",
+    "tslib": "^2.3.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
-    "@types/node": "^12.0.0",
-    "chai": "^4.2.0",
-    "coveralls": "^3.0.3",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.2.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^9.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-react": "^7.13.0",
-    "markdownlint-cli": "^0.15.0",
-    "mocha": "^6.1.4",
-    "nyc": "^14.1.0",
-    "prettier": "^1.17.0",
-    "shx": "^0.3.2",
-    "source-map-support": "^0.5.12",
-    "ts-node": "^8.1.0",
-    "tslint": "^5.16.0",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.4.5"
+    "@tsconfig/node14": "^1.0.1",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.4",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "c8": "^7.10.0",
+    "chai": "^4.3.4",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsdoc": "^37.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "markdownlint-cli": "^0.29.0",
+    "mocha": "^9.1.3",
+    "mocha-steps": "^1.3.0",
+    "prettier": "^2.4.1",
+    "shx": "^0.3.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   },
   "scripts": {
     "build": "npm run compile",
-    "compile": "tsc --pretty",
+    "compile": "tsc --pretty --project .",
     "clean": "shx rm -rf lib",
+    "lint": "npm run lint:tsc:src && npm run lint:tsc:test && npm run lint:tsc:examples && npm run lint:eslint && npm run lint:prettier && npm run lint:markdownlint",
+    "lint:tsc:examples": "tsc --noEmit --pretty --project examples",
+    "lint:tsc:src": "tsc --noEmit --pretty --project .",
+    "lint:tsc:test": "tsc --noEmit --pretty --project test",
+    "lint:eslint": "eslint --ext .js,.ts .",
+    "lint:prettier": "prettier --ignore-path .gitignore --list-different '**/*.{js,json,md,ts,yml}'",
+    "lint:markdownlint": "markdownlint \"*.md\"",
     "postpublish": "git tag v$npm_package_version -a -m \"Release v$npm_package_version\" && git push --tags",
     "prepublishOnly": "npm run build",
-    "pretest": "npm run build && tsc --pretty -p examples && tsc --pretty -p test && eslint . && tslint -t stylish -p . && tslint -t stylish -p examples && tslint -t stylish -p test && prettier --ignore-path .gitignore --list-different '**/*.js' '**/*.ts' '**/*.yaml' && markdownlint \"*.md\"",
+    "pretest": "npm run lint",
     "test": "npm run test:spec",
-    "test:spec": "npm run ts-mocha -- \"test/*.ts\"",
-    "test:coverage": "nyc --reporter json npm run test:spec && nyc report",
-    "ts-mocha": "mocha --use_strict --throw-deprecation --require source-map-support/register --require ts-node/register --timeout 90000"
-  },
-  "nyc": {
-    "extension": [
-      ".ts"
-    ],
-    "exclude": [
-      "**/*.d.ts"
-    ]
+    "test:spec": "mocha",
+    "test:coverage": "c8 --no-clean --reporter=lcov npm run test:spec && c8 report --reporter=text-summary --color"
   }
 }

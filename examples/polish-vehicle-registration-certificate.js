@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {PolishVehicleRegistrationCertificateDecoder} = require('../lib/polish-vehicle-registration-certificate-decoder')
+import {PolishVehicleRegistrationCertificateDecoder} from 'polish-vehicle-registration-certificate-decoder'
 
 // Scanned from https://www.pwpw.pl/binaries/content/gallery/pwpwcms_pl/Dla_mediow/zdjecia_do_artykulow/2016/03/dsc_1548.jpg
 const b64Input =

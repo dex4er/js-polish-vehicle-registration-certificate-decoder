@@ -1,18 +1,19 @@
 {
+  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
     "declaration": true,
-    "esModuleInterop": true,
     "importHelpers": true,
-    "lib": ["es5"],
-    "module": "commonjs",
+    "module": "es2020",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./lib",
-    "target": "es5",
-    "strict": true,
     "typeRoots": ["node_modules/@types"]
   },
-  "exclude": ["./examples/**/*", "./lib/**/*", "./test/**/*"]
+  "exclude": ["./examples/**/*", "./lib/**/*", "./test/**/*"],
+  "ts-node": {
+    "transpileOnly": true
+  }
 }

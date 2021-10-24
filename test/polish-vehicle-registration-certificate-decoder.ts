@@ -1,6 +1,6 @@
-import {Feature, Given, Scenario, Then, When} from './lib/steps'
+import {Feature, Given, Scenario, Then, When} from './lib/steps.js'
 
-import PolishVehicleRegistrationCertificateDecoder from '../src/polish-vehicle-registration-certificate-decoder'
+import PolishVehicleRegistrationCertificateDecoder from '../src/polish-vehicle-registration-certificate-decoder.js'
 
 Feature('Test nrv2eDecompress', () => {
   Scenario('Decompress file', () => {
