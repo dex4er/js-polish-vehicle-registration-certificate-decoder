@@ -1,5 +1,4 @@
-#!/usr/bin/env ts-node
-/// <reference lib="es2017" />
+#!/usr/bin/env -S node --experimental-specifier-resolution=node --experimental-modules --no-warnings --loader ts-node/esm
 
 import {PolishVehicleRegistrationCertificateDecoder} from '../src/polish-vehicle-registration-certificate-decoder'
 
