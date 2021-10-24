@@ -1,3 +1,5 @@
+import {expect} from 'chai'
+
 import {Feature, Given, Scenario, Then, When} from './lib/steps.js'
 
 import PolishVehicleRegistrationCertificateDecoder from '../src/polish-vehicle-registration-certificate-decoder.js'
@@ -17,7 +19,7 @@ Feature('Test nrv2eDecompress', () => {
     })
 
     Then('data property contains correct values', () => {
-      decoder.data.should.deep.equal({
+      expect(decoder.data).to.deep.equal({
         format: {
           name: 'nd.',
           description: 'identyfikator formatu',
