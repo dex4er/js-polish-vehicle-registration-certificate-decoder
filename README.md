@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable MD013 -->
 
-[![Build Status](https://api.travis-ci.com/dex4er/js-polish-vehicle-registration-certificate-decoder.svg)](https://api.travis-ci.com/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-polish-vehicle-registration-certificate-decoder/badge.svg)](https://coveralls.io/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![npm](https://img.shields.io/npm/v/polish-vehicle-registration-certificate-decoder.svg)](https://www.npmjs.com/package/polish-vehicle-registration-certificate-decoder)
+[![Build Status](https://api.travis-ci.com/dex4er/js-polish-vehicle-registration-certificate-decoder.svg)](https://app.travis-ci.com/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-polish-vehicle-registration-certificate-decoder/badge.svg)](https://coveralls.io/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![npm](https://img.shields.io/npm/v/polish-vehicle-registration-certificate-decoder.svg)](https://www.npmjs.com/package/polish-vehicle-registration-certificate-decoder)
 
 <!-- markdownlint-enable MD013 -->
 
