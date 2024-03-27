@@ -37,7 +37,7 @@
     "nrv2e-decompress": "^1.0.0"
   },
   "devDependencies": {
-    "@tsconfig/node14": "^1.0.1",
+    "@tsconfig/node14": "^14.1.2",
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.11.4",
