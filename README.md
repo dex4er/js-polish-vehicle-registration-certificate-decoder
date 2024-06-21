@@ -14,7 +14,7 @@ Decode Polish Vehicle Registration Certificate Aztec 2D barcode data.
 
 ## Requirements
 
-This is ESM module which requires ES2020 and Node >= 16.
+This is an ESM module that requires ES2021 and Node >= 16.
 
 ## Installation
 
