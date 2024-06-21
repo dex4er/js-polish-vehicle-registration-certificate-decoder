@@ -1,6 +1,6 @@
 #!/usr/bin/env -S node --experimental-specifier-resolution=node --experimental-modules --no-warnings --loader ts-node/esm
 
-import {PolishVehicleRegistrationCertificateDecoder} from '../src/polish-vehicle-registration-certificate-decoder'
+import {PolishVehicleRegistrationCertificateDecoder} from '../src/polish-vehicle-registration-certificate-decoder.js'
 
 // Scanned from https://www.pwpw.pl/binaries/content/gallery/pwpwcms_pl/Dla_mediow/zdjecia_do_artykulow/2016/03/dsc_1548.jpg
 const b64Input: string =

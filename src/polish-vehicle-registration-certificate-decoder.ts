@@ -9,7 +9,7 @@ import {
   PolishVehicleRegistrationCertificateField,
   PolishVehicleRegistrationCertificateFuel,
   PolishVehicleRegistrationCertificateFuelCode,
-} from './polish-vehicle-registration-certificate-fields'
+} from './polish-vehicle-registration-certificate-fields.js'
 export {PolishVehicleRegistrationCertificateNewFormatData} from './polish-vehicle-registration-certificate-new-format-data.js'
 export {PolishVehicleRegistrationCertificateOldFormatData} from './polish-vehicle-registration-certificate-old-format-data.js'
 

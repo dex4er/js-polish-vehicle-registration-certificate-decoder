@@ -2,7 +2,11 @@
 
 <!-- markdownlint-disable MD013 -->
 
-[![Build Status](https://api.travis-ci.com/dex4er/js-polish-vehicle-registration-certificate-decoder.svg)](https://app.travis-ci.com/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-polish-vehicle-registration-certificate-decoder/badge.svg)](https://coveralls.io/github/dex4er/js-polish-vehicle-registration-certificate-decoder) [![npm](https://img.shields.io/npm/v/polish-vehicle-registration-certificate-decoder.svg)](https://www.npmjs.com/package/polish-vehicle-registration-certificate-decoder)
+[![GitHub](https://img.shields.io/github/v/release/dex4er/js-polish-vehicle-registration-certificate-decoder?display_name=tag&sort=semver)](https://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder)
+[![CI](https://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder/actions/workflows/ci.yaml/badge.svg)](https://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder/actions/workflows/ci.yaml)
+[![Trunk Check](https://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder/actions/workflows/trunk.yaml/badge.svg)](https://github.com/dex4er/js-polish-vehicle-registration-certificate-decoder/actions/workflows/trunk.yaml)
+[![Coverage Status](https://coveralls.io/repos/github/dex4er/js-polish-vehicle-registration-certificate-decoder/badge.svg)](https://coveralls.io/github/dex4er/js-polish-vehicle-registration-certificate-decoder)
+[![npm](https://img.shields.io/npm/v/polish-vehicle-registration-certificate-decoder.svg)](https://www.npmjs.com/package/polish-vehicle-registration-certificate-decoder)
 
 <!-- markdownlint-enable MD013 -->
 
@@ -10,7 +14,7 @@ Decode Polish Vehicle Registration Certificate Aztec 2D barcode data.
 
 ## Requirements
 
-This is ESM module which requires ES2020 and Node >= 14.
+This is ESM module which requires ES2020 and Node >= 16.
 
 ## Installation
 
@@ -407,6 +411,6 @@ Output:
 
 ## License
 
-Copyright (c) 2018-2021 Piotr Roszatycki <piotr.roszatycki@gmail.com>
+Copyright (c) 2018-2024 Piotr Roszatycki <piotr.roszatycki@gmail.com>
 
 [GPL-2.0](https://opensource.org/licenses/GPL-2.0)
